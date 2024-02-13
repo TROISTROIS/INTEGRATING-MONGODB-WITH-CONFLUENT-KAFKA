@@ -5,13 +5,13 @@ from bson.objectid import ObjectId
 from pymongo.errors import ServerSelectionTimeoutError
 from pymongo.errors import CollectionInvalid, OperationFailure
 
-conn_string = "mongodb+srv://franciscangeno1:%40JuliusCaesar150344BC@cluster0.ktdbhqs.mongodb.net/?retryWrites=true&w=majority"
+conn_string = ""
 
 # Connect to MongoDB
 client = MongoClient(conn_string)
 # Select the database
-db = client['kafka_mongodb_assignment']
-collection = db['logistics_assignment']
+db = client['']
+collection = db['']
 
 app = Flask(__name__)
 
